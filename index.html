@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <!-- Section -01 -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#footer">Footer</a>
+        </nav>
+    </header>
+
+    <!-- Home Section Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Mahnoor Riaz</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>As a Frontend Developer, I create responsive and visually engaging web interfaces using modern technologies like HTML, CSS, Bootstrap, and JavaScript.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mahnoor-riaz-9978aa260"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/m12noor"><i class='bx bxl-github'></i></a>
+                <a href="mailto:mahnoorriaz540@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+            <!-- Updated Download CV Button -->
+            <a href="Resume.pdf" class="btn" download="Mahnoor_Riaz_CV.pdf">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img1.png" alt="">
+        </div>
+    </section>
+
+    <!-- About Section Design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="pr2.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>As a computer science student, my goal is to excel in my technical skills and contribute to innovative projects by continuously learning and growing within a professional organization. I am eager to enhance myself through mutual collaboration, adding value to the organization while staying up to date with industry trends and advancements.</p>
+            <a href="https://github.com/m12noor" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Service Section Design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I build responsive, user-friendly websites tailored to your business needs, ensuring a seamless online experience for your customers.</p>
+                <a href="https://github.com/m12noor" class="btn">Read More</a>
+            </div>
+           
+            <div class="services-box">
+                <i class='bx bx-paint'></i>
+                <h3>Website Designing</h3>
+                <p>I design visually appealing and intuitive websites that reflect your brand's identity and engage your audience effectively.</p>
+                <a href="https://github.com/m12noor" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <p class="p">Creative endeavours will reveal one's talent and commitment.</p>
+        <div class="work-list">
+            <div class="work" data-aos="zoom-in">
+                <img src="pic7.jpg" alt="School Website">
+                <div class="layer">
+                    <h3>School Website</h3>
+                    <p>This is a school website created using HTML, CSS, & Bootstrap!</p>
+                    <a href="https://m12noor.github.io/School-Website/" target="_blank"><i class='bx bx-link-external' ></i></i></a>
+                </div>
+            </div>
+            <div class="work" data-aos="zoom-in">
+                <img src="img4.jpg" alt="Catering Web Page">
+                <div class="layer">
+                    <h3>Catering Web Page</h3>
+                    <p>This is a catering web page using HTML and CSS.</p>
+                    <a href="https://m12noor.github.io/Catering-Website/" target="_blank"><i class='bx bx-link-external' ></i></a>
+                    
+                </div>
+            </div>
+            <div class="work" data-aos="zoom-in">
+                <img src="img2.png" alt="Calculator">
+                <div class="layer">
+                    <h3>Catering Web Page</h3>
+                    <p>This is a calculator  using HTML and CSS & JavaScript.</p>
+                    <a href="https://m12noor.github.io/calculator/" target="_blank"><i class='bx bx-link-external' ></i></a>
+                    
+                </div>
+            </div>
+            <div class="work" data-aos="zoom-in">
+                <img src="img3.png" alt="Interactive Quiz App">
+                <div class="layer">
+                    <h3>Interactvie Quiz App</h3>
+                    <p>This is an interactive quiz app using HTML and CSS & javascript.</p>
+                    <a href="https://m12noor.github.io/Quiz-App/" target="_blank"><i class='bx bx-link-external' ></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/m12noor" class="btn">Learn More</a>
+    </section>
+
+   
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="contact-form">
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- Include EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Existing JavaScript Code
+
+        // Toggle icon navbar
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar'); 
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        };
+
+        // Scroll section active list
+        let sections = document.querySelectorAll('section');
+        let navlinks = document.querySelectorAll('header nav a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height){
+                    navlinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                    });
+                }
+            });
+
+            // Sticky navbar
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 100);
+
+            // Remove toggle icon and navbar when click navbar link (scroll)
+            menuIcon.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        };
+
+        // Scroll reveal
+        ScrollReveal({
+            // reset: true,
+            distance: '80px', // Corrected 'disance' to 'distance'
+            duration: 2000, 
+            delay: 200
+        });
+        ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+        ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form ', { origin: 'bottom' });
+        ScrollReveal().reveal('.home-content, .about-img', { origin: 'left' });
+        ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+        // EmailJS Integration
+
+        // Initialize EmailJS with your User ID
+        (function(){
+            emailjs.init("YOUR_USER_ID"); // Replace with your actual User ID from EmailJS
+        })();
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Basic validation (optional)
+            if (!name || !email || !message) {
+                displayAlert('Please fill in all fields.', 'error');
+                return;
+            }
+
+            // Parameters to send to EmailJS
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                message: message
+            };
+
+            // Send the email using EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams) // Replace with your Service ID and Template ID
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    displayAlert("Message sent successfully!", "success");
+                    document.getElementById('contact-form').reset(); // Reset the form
+                }, function(error) {
+                    console.error('FAILED...', error);
+                    displayAlert("Failed to send the message. Please try again later.", "error");
+                });
+        });
+
+        // Function to display success or error messages
+        function displayAlert(message, type) {
+            const alertBox = document.getElementById('form-alert');
+            alertBox.textContent = message;
+            alertBox.className = `alert ${type}`;
+            alertBox.style.display = 'block';
+
+            // Hide the alert after 5 seconds
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer" id="footer">
+            <div class="footer-text">
+                <p>Copyright © 2024 by Mahnoor | All rights reserved.</p>
+            </div>
+            <div class="footer-icon">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Reveal Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
